@@ -1,0 +1,33 @@
+import styled from "styled-components";
+
+export const NavWrapper = styled.div`
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    background-color: #00B5CD;
+    justify-content: space-between;
+    padding: 10px 20px 10px 20px;
+    z-index: 2;
+    position: fixed;
+    text-align: center;
+`
+export const NavProfile = styled.div `
+    display: flex;
+    background-color: transparent;
+    flex-direction: row;
+    gap: 5px;
+    align-items: end;
+    cursor: pointer;
+    padding: 10px;
+    :hover {
+        color: white;
+        transition: 0.25s;
+    }
+    transition: 0.25s;
+`
+export const NavbarName = styled.p `
+    font-size: 15px;
+    text-align: center;
+    background-color: transparent;
+`
