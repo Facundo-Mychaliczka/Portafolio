@@ -42,6 +42,7 @@ export const IconsWrapper = styled.div `
 export const StyledLink = styled.a `
     display: flex;
     flex-direction: column;
+    background-color: transparent;
 `
 
 export const StyledIcon = styled.img `
