@@ -31,3 +31,15 @@ export const NavbarName = styled.p `
     text-align: center;
     background-color: transparent;
 `
+
+export const MenuBtn = styled.p `
+    background-color: transparent;
+    cursor: pointer;
+    padding: 3px;
+    border-radius: 1rem;
+    transition: 0.5s;
+    &:hover {
+        background-color: #EBEBEB;
+        transition: 0.5s;
+    }
+`

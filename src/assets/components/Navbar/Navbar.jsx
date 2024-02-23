@@ -1,13 +1,20 @@
 import React from 'react'
-import { NavProfile, NavWrapper, NavbarName } from './NavbarStyles'
+import { MenuBtn, NavProfile, NavWrapper, NavbarName } from './NavbarStyles'
+import MenuNav from './MenuNav/MenuNav'
+import { useDispatch } from 'react-redux'
+import { toggleHiddenMenu } from '../../../redux/language/languageSlice'
 
 const Navbar = () => {
+
+  const dispatch = useDispatch()
+
   return (
     <NavWrapper>
         <NavProfile>
             <NavbarName>Facundo Mychaliczka | Desarrollador Web Full-Stack</NavbarName>
         </NavProfile>
-        <p>☰</p>
+        <MenuBtn onClick={() => dispatch(toggleHiddenMenu())}>Idioma</MenuBtn>
+        <MenuNav/>
     </NavWrapper>
   )
 }
