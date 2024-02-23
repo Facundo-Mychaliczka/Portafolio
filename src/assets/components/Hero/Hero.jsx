@@ -12,14 +12,12 @@ const Hero = () => {
       <StyledImg src='LogoImg.png'/>
       <h1>Facundo Mychaliczka</h1>
       <HR/>
-      <h3>Desarrollador Web Full-Stack</h3>
-      <HRSecondary/>
       {
-        language==="ES" 
-        ?<p>Actualmente esta página está en Español.</p>
-        :<p>Now this page is in English.</p>
+        language === "ES"
+        ? <h3>Desarrollador Web Full-Stack</h3>
+        : <h3>Full-Stack Web Developer</h3>
       }
-      
+      <HRSecondary/>
     </HeroStyled>
   )
 }

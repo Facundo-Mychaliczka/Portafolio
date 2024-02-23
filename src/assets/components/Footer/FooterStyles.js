@@ -7,3 +7,10 @@ export const FooterStyled = styled.footer `
     padding: 20px;
     font-size: 14px;
 `
+
+export const FooterContainer = styled.div `
+    background-color: transparent;
+    color: #EBEBEB;
+    padding: 20px;
+    font-size: 14px;
+`

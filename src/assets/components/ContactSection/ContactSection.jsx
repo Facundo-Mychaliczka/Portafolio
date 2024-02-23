@@ -9,8 +9,12 @@ import GithubIcon from "../../../../public/GithubIcon.png"
 import LinkedinIcon from "../../../../public/LinkedinIcon.png"
 import VercelIcon from "../../../../public/VercelIcon.svg"
 import { sendEmail } from '../../../axios/axiosContact'
+import { useSelector } from 'react-redux'
 
 const ContactSection = () => {
+
+  const language = useSelector((state) => state.language.language)
+
   return (
     <ContactWrapper>
         <ContactTitle>CONTACT</ContactTitle>
@@ -25,8 +29,8 @@ const ContactSection = () => {
         >
             <StyledContactForm>
                 <ContactInput name="email" label="E-mail" type="email"/>
-                <ContactInput name="message" label="Mensaje" type="string"/>
-                <ContactSubmitButton type='submit'>Enviar</ContactSubmitButton>
+                <ContactInput name="message" label={language === "ES"? "Mensaje": "Message"} type="string"/>
+                <ContactSubmitButton type='submit'>{language === "ES"? "Enviar": "Send"}</ContactSubmitButton>
             </StyledContactForm>
         </Formik>
         <IconsWrapper>
