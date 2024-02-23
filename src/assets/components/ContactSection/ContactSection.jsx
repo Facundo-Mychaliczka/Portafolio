@@ -8,6 +8,7 @@ import { StyledLink } from '../Portfolio/PortfolioStyles'
 import GithubIcon from "../../../../public/GithubIcon.png"
 import LinkedinIcon from "../../../../public/LinkedinIcon.png"
 import VercelIcon from "../../../../public/VercelIcon.svg"
+import { sendEmail } from '../../../axios/axiosContact'
 
 const ContactSection = () => {
   return (
@@ -17,7 +18,10 @@ const ContactSection = () => {
         <Formik
         initialValues={INITIAL_VALUES_CONTACT}
         validationSchema={validationSchema}
-        // onSubmit={}
+        onSubmit={ async (values, actions) => {
+          await sendEmail(values.message, values.email);
+          actions.resetForm()
+        }}
         >
             <StyledContactForm>
                 <ContactInput name="email" label="E-mail" type="email"/>
