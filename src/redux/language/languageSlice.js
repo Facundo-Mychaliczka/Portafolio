@@ -3,6 +3,7 @@ import { createSlice } from "@reduxjs/toolkit"
 
 const INITIAL_STATE = {
     menuHidden: true,
+    blurHidden: true,
     language: "ES"
 }
 
@@ -13,19 +14,31 @@ const languageSlice = createSlice({
         setLanguageToEN: (state) => {
             return {
                 ...state,
-                language: "EN"
+                language: "EN",
+                menuHidden: true,
+                blurHidden: true
             }
         },
         setLanguageToES: (state) => {
             return {
                 ...state,
-                language: "ES"
+                language: "ES",
+                menuHidden: true,
+                blurHidden: true
             } 
         },
         toggleHiddenMenu: (state) => {
             return {
                 ...state,
-                menuHidden: !state.menuHidden
+                menuHidden: !state.menuHidden,
+                blurHidden: !state.blurHidden
+            }
+        },
+        setHiddenBlur: (state) => {
+            return {
+                ...state,
+                blurHidden: true,
+                menuHidden: true
             }
         }
     }
@@ -34,7 +47,8 @@ const languageSlice = createSlice({
 export const {
     setLanguageToEN,
     setLanguageToES,
-    toggleHiddenMenu
+    toggleHiddenMenu,
+    setHiddenBlur
 } = languageSlice.actions;
 
 export default languageSlice.reducer;

@@ -27,3 +27,4 @@ export const StyledLanguageText = styled.p `
         transition: 0.25s;
     }
 `
+

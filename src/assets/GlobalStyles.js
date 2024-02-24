@@ -1,4 +1,4 @@
-import {createGlobalStyle} from "styled-components"
+import styled, {createGlobalStyle} from "styled-components"
 
 export const GlobalStyles = createGlobalStyle `
     * {
@@ -14,6 +14,14 @@ export const GlobalStyles = createGlobalStyle `
         background-color: #EBEBEB;
     }
 `
-// NARANJA PARA ENVIAR EMAIL
+export const BlurDisplay = styled.div `
+    position: fixed;
+    background-color: transparent;
+    top: 20px;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    backdrop-filter: blur(2px);
+    display:${({hidden}) => hidden ? "none": "block"} ;
+`
 
-// #F26419
