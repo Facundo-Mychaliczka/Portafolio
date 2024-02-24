@@ -20,6 +20,9 @@ export const SkillsWrapper = styled.div `
     grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color: transparent;
     margin: 1rem;
+    @media screen and ( max-width : 557px) {
+        grid-template-columns: 1fr 1fr;
+    }
 `
 
 export const SkillDiv = styled.div `
