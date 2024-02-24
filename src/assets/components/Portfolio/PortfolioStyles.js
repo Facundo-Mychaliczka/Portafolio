@@ -31,7 +31,8 @@ export const StyledImg = styled.img `
     border-radius: 2rem;
     border: grey solid;
     @media screen and ( max-width : 680px) {
-        max-width: 80%;
+        max-width: 90%;
+        height: 70%;
     }
     
 `
