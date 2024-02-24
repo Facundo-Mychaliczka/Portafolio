@@ -18,6 +18,9 @@ export const ProyectBox = styled.div `
     display: flex;
     flex-direction: column;
     gap: 20px;
+    & h3 {
+        width: 80%;
+    }
 `
 
 export const StyledSpan = styled.span `

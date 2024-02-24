@@ -30,7 +30,7 @@ const Portfolio = () => {
      </ProyectBox>
      <ProyectBox>
       {language === "ES"
-      ?<h3>AorusAPI es un proyecto back-end realizado con <StyledSpan>typescript</StyledSpan>, el cual es utilizado en AorusPage para la creación, logueo, autentificaión de usuarios y creación de órdenes por medio de una Base de Datos creada en <StyledSpan>Mongo.</StyledSpan> <br />
+      ?<h3>AorusAPI es un proyecto back-end realizado con <StyledSpan>typescript</StyledSpan>, el cual es utilizado en AorusPage para la creación, logueo, autentificaión de usuarios y creación de órdenes por medio de una Base de Datos creada en <StyledSpan>Mongo.</StyledSpan> 
         Se utilizaron librerías tales como <StyledSpan>Cors</StyledSpan>, <StyledSpan>bcryptjs</StyledSpan>, <StyledSpan>express</StyledSpan>, <StyledSpan>express-validator</StyledSpan>, <StyledSpan>jsonwebtoken</StyledSpan>, entre otras.</h3>
         : <h3>AorusAPI is a back-end project made with <StyledSpan>typescript</StyledSpan>, which is used in AorusPage for the creation, logging, user authentication and creation of orders through a Database created in <StyledSpan>Mongo.</StyledSpan>
         Libraries such as <StyledSpan>Cors</StyledSpan>, <StyledSpan>bcryptjs</StyledSpan>, <StyledSpan>express</StyledSpan>, <StyledSpan>express-validator</StyledSpan>, <StyledSpan>jsonwebtoken</StyledSpan>, among others, were used.</h3>
