@@ -24,8 +24,8 @@ const Portfolio = () => {
         
        <StyledImg src={AorusImage} />
        <IconsWrapper>
-        <StyledLink href='https://integrador-react-facundo-mychaliczka.vercel.app/'>Deploy<StyledIcon src={VercelIcon} alt="" /></StyledLink>
-        <StyledLink href='https://github.com/Facundo-Mychaliczka/IntegradorReact'>Code<StyledIcon src={GithubIcon} alt="" /></StyledLink>
+        <StyledLink href='https://integrador-react-facundo-mychaliczka.vercel.app/' target='_blank'>Deploy<StyledIcon src={VercelIcon} alt="" /></StyledLink>
+        <StyledLink href='https://github.com/Facundo-Mychaliczka/IntegradorReact' target='_blank'>Code<StyledIcon src={GithubIcon} alt="" /></StyledLink>
        </IconsWrapper>
      </ProyectBox>
      <ProyectBox>
@@ -39,8 +39,8 @@ const Portfolio = () => {
          
          <StyledImg src={AorusAPI} />
          <IconsWrapper>
-        <StyledLink href='https://documenter.getpostman.com/view/30895857/2sA2rAz2nC'>Postman Doc.<StyledIcon src={PostmanIcon} alt="" /></StyledLink>
-        <StyledLink href='https://github.com/Facundo-Mychaliczka/ApiBack'>Code<StyledIcon src={GithubIcon} alt="" /></StyledLink>
+        <StyledLink href='https://documenter.getpostman.com/view/30895857/2sA2rAz2nC' target='_blank'>Postman Doc.<StyledIcon src={PostmanIcon} alt="" /></StyledLink>
+        <StyledLink href='https://github.com/Facundo-Mychaliczka/ApiBack' target='_blank'>Code<StyledIcon src={GithubIcon} alt="" /></StyledLink>
        </IconsWrapper>
      </ProyectBox>
     </PortFolioWrapper>

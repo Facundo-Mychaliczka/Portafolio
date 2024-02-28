@@ -34,9 +34,9 @@ const ContactSection = () => {
             </StyledContactForm>
         </Formik>
         <IconsWrapper>
-            <StyledLink href='https://github.com/Facundo-Mychaliczka'><StyledIconContact src={GithubIcon} alt="" /></StyledLink>
-            <StyledLink href='https://www.linkedin.com/in/facundo-mychaliczka-4653a7299/'><LinkedinStyledIcon src={LinkedinIcon} alt="" /></StyledLink>
-            <StyledLink href='https://vercel.com/facundo-mychaliczka'><VercelIconContact src={VercelIcon} alt="" /></StyledLink>
+            <StyledLink href='https://github.com/Facundo-Mychaliczka' target='_blank'><StyledIconContact src={GithubIcon} alt="" /></StyledLink>
+            <StyledLink href='https://www.linkedin.com/in/facundo-mychaliczka-4653a7299/' target='_blank'><LinkedinStyledIcon src={LinkedinIcon} alt="" /></StyledLink>
+            <StyledLink href='https://vercel.com/facundo-mychaliczka' target='_blank'><VercelIconContact src={VercelIcon} alt="" /></StyledLink>
         </IconsWrapper>
         
     </ContactWrapper>

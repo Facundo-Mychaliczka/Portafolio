@@ -13,12 +13,12 @@ const Footer = () => {
       ?<FooterContainer>
             Desarrolado y diseñado por Facundo Mychaliczka.
             <br />
-            También puedes encontrar el código de ésta página en: <StyledLink href='https://github.com/Facundo-Mychaliczka/Portafolio'><StyledIcon src={GithubIcon} alt="" /></StyledLink>
+            También puedes encontrar el código de ésta página en: <StyledLink href='https://github.com/Facundo-Mychaliczka/Portafolio' target='_blank'><StyledIcon src={GithubIcon} alt="" /></StyledLink>
         </FooterContainer>
         : <FooterContainer>
         Developed and designed by Facundo Mychaliczka.
         <br />
-        You can also find the code of this page at: <StyledLink href='https://github.com/Facundo-Mychaliczka/Portafolio'><StyledIcon src={GithubIcon} alt="" /></StyledLink>
+        You can also find the code of this page at: <StyledLink href='https://github.com/Facundo-Mychaliczka/Portafolio' target='_blank'><StyledIcon src={GithubIcon} alt="" /></StyledLink>
     </FooterContainer>
       }
       

@@ -9,6 +9,7 @@ import { BlurDisplay } from "./assets/GlobalStyles"
 import { useDispatch, useSelector } from "react-redux"
 import { setHiddenBlur } from "./redux/language/languageSlice"
 
+
 function App() {
   const dispatch = useDispatch()
 
