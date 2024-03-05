@@ -21,6 +21,7 @@ const AboutMe = () => {
            Soy Facundo Mychaliczka, desarrollador web full-stack de Argentina. <br />
            <br />
            Aunque no tengo experiencia profesional en el campo, he estado realizando diversos proyectos en NUCBA, donde estudié los diferentes módulos de desarrollo web: HTML y CSS puro, JavaScript, ReactJS y Typescript junto a distintas librerías necesarias que me permitieron conseguir el título de "Programación Full-Stack". <br />
+           <br />
            A demás, hablo Inglés con fluidez, lo que me permite comunicarme eficazmente en un entorno global.<br />
            <br />
            Estoy entusiasmado por adentrarme aún más en el mundo del desarrollo web y seguir aprendiendo sobre las últimas tecnologías y tendencias. <br />
