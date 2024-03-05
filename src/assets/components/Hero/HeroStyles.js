@@ -8,7 +8,6 @@ export const HeroStyled = styled.div `
     padding-top: 60px;
     width: 100%;
     min-height: 100vh;
-    background-image: url("../../../../public/FondoHero.jpg");
     background-size: cover;
 `
 

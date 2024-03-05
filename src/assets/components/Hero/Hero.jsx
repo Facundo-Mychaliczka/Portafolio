@@ -1,6 +1,7 @@
 import React from 'react'
-import { HR, HRSecondary, HeroStyled, StyledH1, StyledH3, StyledImg } from './HeroStyles'
+import { HR, HeroStyled, StyledH1, StyledH3, StyledImg } from './HeroStyles'
 import { useSelector } from 'react-redux'
+import HeroBgImage from "../../../../public/FondoHero.jpg"
 
 
 const Hero = () => {
@@ -8,7 +9,7 @@ const Hero = () => {
   const language = useSelector((state) => state.language.language)
 
   return (
-    <HeroStyled id="hero">
+    <HeroStyled id="hero" style={{ backgroundImage: `url(${HeroBgImage})` }}>
       <StyledImg src='LogoImg.png'/>
       <StyledH1>Facundo Mychaliczka</StyledH1>
       <HR/>
