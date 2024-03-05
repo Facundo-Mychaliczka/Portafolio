@@ -8,6 +8,7 @@ export const ContactWrapper = styled.div `
     flex-direction: column;
     background-color: black;
     width: 100%;
+    min-height: calc(100vh - 50px);
     gap: 20px;
     padding: 10px;
 `

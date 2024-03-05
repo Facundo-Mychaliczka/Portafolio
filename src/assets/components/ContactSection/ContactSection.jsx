@@ -16,7 +16,7 @@ const ContactSection = () => {
   const language = useSelector((state) => state.language.language)
 
   return (
-    <ContactWrapper>
+    <ContactWrapper id='ContactMe'>
         <ContactTitle>CONTACT</ContactTitle>
         <HR></HR>
         <Formik

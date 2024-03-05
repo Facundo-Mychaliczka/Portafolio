@@ -6,13 +6,14 @@ import { setLanguageToEN, setLanguageToES } from '../../../../redux/language/lan
 const MenuNav = () => {
 
     const isHiddenMenu = useSelector((state) => state.language.menuHidden)
+    const language = useSelector((state) => state.language.language)
 
     const dispatch = useDispatch()
 
   return (
     <StyledMenu hidden= {isHiddenMenu}>
-        <StyledLanguageText onClick={() => dispatch(setLanguageToES())}>Español</StyledLanguageText>
-        <StyledLanguageText onClick={() => dispatch(setLanguageToEN())}>English</StyledLanguageText>
+        <StyledLanguageText onClick={() => dispatch(setLanguageToES())}>{language === "ES" ? "Español": "Spanish"}</StyledLanguageText>
+        <StyledLanguageText onClick={() => dispatch(setLanguageToEN())}>{language === "ES" ? "Inglés": "English"}</StyledLanguageText>
     </StyledMenu>
   )
 }

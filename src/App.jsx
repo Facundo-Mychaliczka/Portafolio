@@ -8,6 +8,7 @@ import Footer from "./assets/components/Footer/Footer"
 import { BlurDisplay } from "./assets/GlobalStyles"
 import { useDispatch, useSelector } from "react-redux"
 import { setHiddenBlur } from "./redux/language/languageSlice"
+import AboutMe from "./assets/components/AboutMe/AboutMe"
 
 
 function App() {
@@ -19,9 +20,10 @@ function App() {
     <>
     <PageWrapper>
       <Navbar/>
-      <Hero/> 
-      <Portfolio/>
+      <Hero/>
+      <AboutMe/>
       <Skillset/>
+      <Portfolio/>
       <ContactSection/>
       <Footer/>
       <BlurDisplay hidden={isHidden} onClick={() => dispatch(setHiddenBlur())}/>

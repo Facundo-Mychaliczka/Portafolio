@@ -13,6 +13,10 @@ export const GlobalStyles = createGlobalStyle `
         text-align: center;
         background-color: #EBEBEB;
     }
+    html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 50px;
+        }
 `
 export const BlurDisplay = styled.div `
     position: fixed;

@@ -7,6 +7,7 @@ export const PortFolioWrapper = styled.div `
     justify-content: center;
     align-items: center;
     gap: 20px;
+    min-height: calc(100vh - 50px);
 `
 
 export const PortfolioTitle = styled.h2 `

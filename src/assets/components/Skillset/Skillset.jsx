@@ -9,12 +9,16 @@ import GitLogo from "../../../../public/GitLogo.png"
 import NodeJsLogo from "../../../../public/NodeJsLogo.png"
 import TsLogo from "../../../../public/TsLogo.png"
 import VsCodeLogo from "../../../../public/VsCodeLogo.png"
+import { useSelector } from 'react-redux'
 
 
 
 const Skillset = () => {
+
+  const language = useSelector((state) => state.language.language)
+
   return (
-    <SkillsetWrapper>
+    <SkillsetWrapper id='Skillset'>
         <SkillsetTitle>
             SKILLSET
             <HRSecondary/>
@@ -49,7 +53,7 @@ const Skillset = () => {
               <SkillImg src={TsLogo} alt="" />
             </SkillDiv>
             <SkillDiv>
-              <StyledP>LIBRERÍAS</StyledP>
+              <StyledP>{language == "ES" ? "LIBRERÍAS" : "LIBRARIES"}</StyledP>
               <SkillImg src={VsCodeLogo} alt="" />
             </SkillDiv>
 

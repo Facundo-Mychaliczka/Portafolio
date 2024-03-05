@@ -14,8 +14,8 @@ const Portfolio = () => {
   const language = useSelector((state) => state.language.language)
 
   return (
-    <PortFolioWrapper>
-     <PortfolioTitle>PORTFOLIO</PortfolioTitle>
+    <PortFolioWrapper id='Portfolio'>
+     <PortfolioTitle>{language === "ES" ? "PORTAFOLIO" : "PORTFOLIO"}</PortfolioTitle>
      <ProyectBox>
       {language === "ES"
         ? <h3>AorusPage es un proyecto realizado utilizando <StyledSpan>React</StyledSpan>  para la maquetación, <StyledSpan>JS</StyledSpan>  con la librería styled-components para los estilos, <StyledSpan>Axios</StyledSpan>  para la conexión a una Base de Datos, <StyledSpan>React-Router-Dom</StyledSpan>  para sus rutas, <StyledSpan>React-Redux</StyledSpan>  para la utilización de su store y <StyledSpan>Formik</StyledSpan> junto a <StyledSpan>Yup</StyledSpan>  para creación y validación de formularios.</h3>

@@ -32,6 +32,23 @@ export const NavbarName = styled.p `
     background-color: transparent;
 `
 
+
+export const NavbarUl = styled.ul `
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: transparent;
+`
+
+export const StyledNavbarLi = styled.a `
+    background-color: transparent;
+    transition: 0.25s;
+    &:hover {
+        scale: 1.1;
+        transition: 0.25s;
+    }
+`
+
 export const MenuBtn = styled.p `
     background-color: transparent;
     cursor: pointer;
