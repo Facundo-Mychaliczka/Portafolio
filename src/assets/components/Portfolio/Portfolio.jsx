@@ -1,5 +1,5 @@
 import React  from 'react'
-import {  IconsWrapper, InfoDescription, PortFolioWrapper, PortfolioTitle, ProyectBox, StyledIcon, StyledImg, StyledLink, StyledP } from './PortfolioStyles'
+import {  IconsWrapper, InfoDescription, PortFolioWrapper, PortfolioTitle, ProyectBox, ProyectsContainer, StyledIcon, StyledImg, StyledLink, StyledP } from './PortfolioStyles'
 import AorusImage from "../../../../public/AorusPage.png"
 import VercelIcon from "../../../../public/VercelIcon.svg"
 import GithubIcon from "../../../../public/GithubIcon.png"
@@ -21,49 +21,50 @@ const Portfolio = () => {
   return (
     <PortFolioWrapper id='Portfolio'>
      <PortfolioTitle>{language === "ES" ? "PORTAFOLIO" : "PORTFOLIO"}</PortfolioTitle>
-     {/* PRIMER PROYECTO */}
-     <ProyectBox onClick={() => dispatch(toggleAorusPageHidden())}>
+      <ProyectsContainer>
+        {/* PRIMER PROYECTO */}
+        <ProyectBox onClick={() => dispatch(toggleAorusPageHidden())}>
+            {language === "ES" ? "Click en la imagen para ver más." : "Click on the image to see more."}
+            <StyledImg src={AorusImage} isHidden= {AorusPageIsHidden}/>
+            <InfoDescription isHidden= {AorusPageIsHidden}>
+              {language === "ES"
+              ?<StyledP>
+                AorusPage es un proyecto realizado utilizando React  para la maquetación, JS  con la librería styled-components para los estilos, Axios  para la conexión a una Base de Datos, React-Router-Dom  para sus rutas, React-Redux para la utilización de su store y Formik junto a Yup para creación y validación de formularios.</StyledP>
+              : <StyledP>
+                AorusPage is a project made using React for the layout, JS with the styled-components library for the styles, Axios for the connection to a Database, React-Router-Dom for its routes, React-Redux for the use of its store and Formik together with Yup for form creation and validation.
+              </StyledP>
+              }
+              
+              <IconsWrapper>
+              <StyledLink href='https://integrador-react-facundo-mychaliczka.vercel.app/' target='_blank'>Deploy<StyledIcon src={VercelIcon} alt="" /></StyledLink>
+                <StyledLink href='https://github.com/Facundo-Mychaliczka/ApiBack' target='_blank'>Code<StyledIcon src={GithubIcon} alt="" /></StyledLink>
+              </IconsWrapper>
+            </InfoDescription>
+        </ProyectBox>
+
+    {/* SEGUNDO PROYECTO  */}
+        <ProyectBox onClick={() => dispatch(toggleAorusApiHidden())}>
         {language === "ES" ? "Click en la imagen para ver más." : "Click on the image to see more."}
-        <StyledImg src={AorusImage} isHidden= {AorusPageIsHidden}/>
-        <InfoDescription isHidden= {AorusPageIsHidden}>
-          {language === "ES"
-          ?<StyledP>
-            AorusPage es un proyecto realizado utilizando React  para la maquetación, JS  con la librería styled-components para los estilos, Axios  para la conexión a una Base de Datos, React-Router-Dom  para sus rutas, React-Redux para la utilización de su store y Formik junto a Yup para creación y validación de formularios.</StyledP>
-          : <StyledP>
-            AorusPage is a project made using React for the layout, JS with the styled-components library for the styles, Axios for the connection to a Database, React-Router-Dom for its routes, React-Redux for the use of its store and Formik together with Yup for form creation and validation.
-          </StyledP>
-          }
-          
-          <IconsWrapper>
-          <StyledLink href='https://integrador-react-facundo-mychaliczka.vercel.app/' target='_blank'>Deploy<StyledIcon src={VercelIcon} alt="" /></StyledLink>
-            <StyledLink href='https://github.com/Facundo-Mychaliczka/ApiBack' target='_blank'>Code<StyledIcon src={GithubIcon} alt="" /></StyledLink>
-          </IconsWrapper>
-        </InfoDescription>
-     </ProyectBox>
-
-{/* SEGUNDO PROYECTO  */}
-     <ProyectBox onClick={() => dispatch(toggleAorusApiHidden())}>
-     {language === "ES" ? "Click en la imagen para ver más." : "Click on the image to see more."}
-        <StyledImg src={AorusAPI} isHidden= {AorusApiIsHidden}/>
-        <InfoDescription isHidden= {AorusApiIsHidden}>
-          {language === "ES" 
-          ?<StyledP>
-            AorusAPI es un proyecto back-end realizado con typescript, el cual es utilizado en AorusPage para la creación, logueo, autentificaión de usuarios y creación de órdenes por medio de una Base de Datos creada en Mongo. 
-        Se utilizaron librerías tales como Cors, bcryptjs, express, express-validator, jsonwebtoken, entre otras.
-          </StyledP>
-          : <StyledP>
-            AorusAPI is a back-end project made with typescript, which is used in AorusPage for the creation, logging, user authentication and creation of orders through a Database created in Mongo.
-        Libraries such as Cors, bcryptjs, express, express-validator, jsonwebtoken, among others, were used.
-          </StyledP>
-          }
-          
-          <IconsWrapper>
-            <StyledLink href='https://documenter.getpostman.com/view/30895857/2sA2rAz2nC' target='_blank'>Postman Doc.<StyledIcon src={PostmanIcon} alt="" /></StyledLink>
-            <StyledLink href='https://github.com/Facundo-Mychaliczka/ApiBack' target='_blank'>Code<StyledIcon src={GithubIcon} alt="" /></StyledLink>
-          </IconsWrapper>
-        </InfoDescription>
-     </ProyectBox>
-
+            <StyledImg src={AorusAPI} isHidden= {AorusApiIsHidden}/>
+            <InfoDescription isHidden= {AorusApiIsHidden}>
+              {language === "ES" 
+              ?<StyledP>
+                AorusAPI es un proyecto back-end realizado con typescript, el cual es utilizado en AorusPage para la creación, logueo, autentificaión de usuarios y creación de órdenes por medio de una Base de Datos creada en Mongo. 
+            Se utilizaron librerías tales como Cors, bcryptjs, express, express-validator, jsonwebtoken, entre otras.
+              </StyledP>
+              : <StyledP>
+                AorusAPI is a back-end project made with typescript, which is used in AorusPage for the creation, logging, user authentication and creation of orders through a Database created in Mongo.
+            Libraries such as Cors, bcryptjs, express, express-validator, jsonwebtoken, among others, were used.
+              </StyledP>
+              }
+              
+              <IconsWrapper>
+                <StyledLink href='https://documenter.getpostman.com/view/30895857/2sA2rAz2nC' target='_blank'>Postman Doc.<StyledIcon src={PostmanIcon} alt="" /></StyledLink>
+                <StyledLink href='https://github.com/Facundo-Mychaliczka/ApiBack' target='_blank'>Code<StyledIcon src={GithubIcon} alt="" /></StyledLink>
+              </IconsWrapper>
+            </InfoDescription>
+        </ProyectBox>
+      </ProyectsContainer>
     </PortFolioWrapper>
   )
 }

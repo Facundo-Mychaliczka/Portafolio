@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 
 export const StyledMenu = styled.div `
-    display: ${({hidden}) => hidden ? "none": "flex"};
+    transition: 0.5s;
+    display: flex;
     flex-direction: column;
     min-width: 200px;
     border-color: #EBEBEB;
@@ -15,7 +16,8 @@ export const StyledMenu = styled.div `
     gap: 10px;
     /* --------- */
     top: 40px;
-    right: 0px;
+    right: -400px; 
+    transform: ${({hidden}) => hidden ? "" : "translateX(-390px)"};
 `
 
 export const StyledLanguageText = styled.p `

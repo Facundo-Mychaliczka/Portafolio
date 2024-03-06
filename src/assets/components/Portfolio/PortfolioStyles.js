@@ -16,6 +16,12 @@ export const PortfolioTitle = styled.h2 `
     color: #5C5C5C;
 `
 
+export const ProyectsContainer = styled.div `
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+`
 
 export const ProyectBox = styled.div `
     display: flex;
@@ -28,12 +34,9 @@ export const ProyectBox = styled.div `
 `
 
 
-
-
-
 export const StyledImg = styled.img `
     cursor: pointer;
-    width: auto;
+    width: 600px;
     height: 300px;
     border-radius: 2rem;
     border: grey solid;
