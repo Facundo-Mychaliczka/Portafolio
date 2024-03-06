@@ -78,7 +78,7 @@ export const InfoDescription = styled.div `
     align-items: center;
     border-radius: 2rem;
     padding: 10px;
-    width: ${({isHidden}) => isHidden ? "80%": "90%"};
+    width: ${({isHidden}) => isHidden ? "50%": "90%"};
     margin-top: ${({isHidden}) => isHidden ? "-250px": "5px"};
 
 `
