@@ -1,6 +1,7 @@
 import React from 'react'
 import { AboutMeContainer, AboutMeDescription, AboutMeDescriptionContainer, AboutMeImg, AboutMeImgContainer, AboutMeTitle, AboutMeWrapper, DownloadBtn } from './AboutMeStyles'
 import { useSelector } from 'react-redux'
+import { HR } from '../Hero/HeroStyles'
 
 const AboutMe = () => {
 
@@ -10,6 +11,7 @@ const AboutMe = () => {
   return (
     <AboutMeWrapper id='AboutMe'>
       <AboutMeTitle>{language === "ES" ? "SOBRE MI": "ABOUT ME"}</AboutMeTitle>
+      <HR/>
       <AboutMeContainer>
       <AboutMeImgContainer>
         {/* <AboutMeImg src="../../../../public/CSSLogo.png" alt="" /> */}

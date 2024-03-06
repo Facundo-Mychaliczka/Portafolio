@@ -13,6 +13,11 @@ export const GlobalStyles = createGlobalStyle `
         text-align: center;
         background-color: #EBEBEB;
     }
+    :root {
+        --navBgColor: #1B87CA;
+        --aboutMeBgColor: #15202B;
+        --aboutMeBtnColor: #01c38e;
+    }
     html {
         scroll-behavior: smooth;
         scroll-padding-top: 50px;

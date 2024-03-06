@@ -7,11 +7,12 @@ export const AboutMeWrapper = styled.div `
     justify-content: space-around;
     min-height: calc(100vh - 50px);
     width: 100%;
+    background-color: var(--aboutMeBgColor);
 `
 
 export const AboutMeTitle = styled.h3 `
     background-color: transparent;
-    color: black;
+    color: whitesmoke;
     font-size: 50px;
 `
 
@@ -39,10 +40,13 @@ export const AboutMeDescriptionContainer = styled.div `
     font-size: 20px;
     text-align: justify;
     gap: 20px;
+    background-color: transparent;
 `
 export const AboutMeDescription = styled.p `
     text-align: justify;
+    color: whitesmoke;
     font-size: 20px;
+    background-color: transparent;
     @media (min-width: 1400px) {
         font-size: 30px;
     }
@@ -52,7 +56,8 @@ export const AboutMeDescription = styled.p `
 `
 
 export const DownloadBtn = styled.a `
-    background-color: green;
+    background-color: var(--aboutMeBtnColor);
+    color: whitesmoke;
     padding: 15px;
     border-radius: 2rem;
     transition: 0.5s;

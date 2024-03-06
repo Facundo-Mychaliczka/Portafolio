@@ -7,19 +7,6 @@ const ContactInput = ({label, type, name}) => {
     <Field
         name= {name}
     >
-        {/* {
-            ({field, form: {errors, touched}}) => (
-                <InputContactBox>
-                    <InputContactLabel>{label}</InputContactLabel>
-                    <InputStyledContact
-                    type={type}
-                    {...field}
-                    name={field.name}
-                    isError={errors[field.name] && touched[field.name]}
-                    />
-                    <ErrorMessage name={name} component={ErrorMessageStyled}/>
-                </InputContactBox>
-            )} */}
         {
             name === "email" 
             ?({field, form: {errors, touched}}) => (

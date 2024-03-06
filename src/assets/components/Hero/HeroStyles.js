@@ -33,7 +33,7 @@ export const StyledH3 = styled.h3 `
 `
 
 export const HR = styled.hr `
-    background-image: linear-gradient(to right,transparent,#00B5CD,transparent);
+    background-image: linear-gradient(to right,transparent,crimson,transparent);
     border: 0;
     height: 0.1rem;
     width: 100vw;

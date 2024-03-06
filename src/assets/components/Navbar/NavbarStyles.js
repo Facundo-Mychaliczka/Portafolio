@@ -5,7 +5,7 @@ export const NavWrapper = styled.div`
     flex-direction: row;
     width: 100%;
     height: 50px;
-    background-color: #00B5CD;
+    background-color: var(--navBgColor);
     justify-content: space-between;
     padding: 10px 20px 10px 20px;
     z-index: 2;
@@ -20,16 +20,19 @@ export const NavProfile = styled.div `
     align-items: end;
     cursor: pointer;
     padding: 10px;
+    transition: 0.25s;
     :hover {
-        color: white;
+        scale: 1.05;
         transition: 0.25s;
     }
-    transition: 0.25s;
+    
 `
 export const NavbarName = styled.p `
     font-size: 15px;
     text-align: center;
     background-color: transparent;
+    color: white;
+    transition: 0.25s;
 `
 
 
@@ -43,6 +46,7 @@ export const NavbarUl = styled.ul `
 export const StyledNavbarLi = styled.a `
     background-color: transparent;
     transition: 0.25s;
+    color: white;
     &:hover {
         scale: 1.1;
         transition: 0.25s;
@@ -55,8 +59,10 @@ export const MenuBtn = styled.p `
     padding: 3px;
     border-radius: 1rem;
     transition: 0.5s;
+    color: white;
     &:hover {
         background-color: #EBEBEB;
+        color: black;
         transition: 0.5s;
     }
 `

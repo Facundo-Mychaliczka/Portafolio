@@ -4,7 +4,10 @@ export const SkillsetWrapper = styled.section `
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: #00B5CD;
+    /* background: rgb(16,18,19);
+    background: linear-gradient(180deg, rgba(16,18,19,1) 55%, rgba(35,114,156,1) 100%); */
+    background: rgb(21,32,43);
+    background: linear-gradient(180deg, rgba(21,32,43,1) 55%, rgba(35,114,156,1) 100%);
     width: 100%;
     padding: 50px;
     min-height: calc(100vh - 50px);
@@ -43,4 +46,5 @@ export const SkillImg = styled.img `
 export const StyledP = styled.p `
     background-color: transparent;
     margin-bottom: 10px;
+    color: white;
 `

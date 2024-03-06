@@ -6,10 +6,9 @@ export const StyledMenu = styled.div `
     display: flex;
     flex-direction: column;
     min-width: 200px;
-    border-color: #EBEBEB;
     z-index: 2;
     position: fixed;
-    background-color: #00B5CD;
+    background-color: var(--navBgColor);
     margin: 10px;
     padding: 10px;
     border-radius: 2rem;
@@ -24,8 +23,9 @@ export const StyledLanguageText = styled.p `
     background-color: transparent;
     cursor: pointer;
     transition: 0.25s;
+    color: white;
     &:hover {
-        color: #EBEBEB;
+        color: black;
         transition: 0.25s;
     }
 `

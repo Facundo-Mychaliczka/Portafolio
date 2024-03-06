@@ -23,6 +23,8 @@ export const InputStyledContact = styled.input `
 
 export const ErrorMessageStyled= styled.p `
 color: red;
+border-radius: 5px;
+padding: 2px;
 `
 
 export const TextAreaStyled = styled.textarea `

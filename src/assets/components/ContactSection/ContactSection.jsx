@@ -1,7 +1,7 @@
 import React from 'react'
 import { ContactSubmitButton, ContactTitle, ContactWrapper, IconsWrapper, LinkedinStyledIcon, StyledContactForm, StyledIconContact, VercelIconContact } from './ContactSectionStyles'
 import {Formik} from "formik"
-import { INITIAL_VALUES_CONTACT, validationSchema } from './FormikData/FormikData'
+import { INITIAL_VALUES_CONTACT, validationSchema, validationSchemaEnglish } from './FormikData/FormikData'
 import ContactInput from './Input/ContactInput'
 import { HR } from '../Hero/HeroStyles'
 import { StyledLink } from '../Portfolio/PortfolioStyles'
@@ -21,7 +21,7 @@ const ContactSection = () => {
         <HR></HR>
         <Formik
         initialValues={INITIAL_VALUES_CONTACT}
-        validationSchema={validationSchema}
+        validationSchema={language === "ES" ? validationSchema : validationSchemaEnglish}
         onSubmit={ async (values, actions) => {
           await sendEmail(values.message, values.email);
           actions.resetForm()

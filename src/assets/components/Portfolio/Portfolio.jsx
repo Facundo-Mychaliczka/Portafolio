@@ -1,5 +1,5 @@
 import React  from 'react'
-import {  IconsWrapper, InfoDescription, PortFolioWrapper, PortfolioTitle, ProyectBox, ProyectsContainer, StyledIcon, StyledImg, StyledLink, StyledP } from './PortfolioStyles'
+import {  IconsWrapper, InfoDescription, PortFolioWrapper, PortfolioDivPrueba, PortfolioTitle, ProyectBox, ProyectsContainer, StyledIcon, StyledImg, StyledInstructionPortfolio, StyledLink, StyledP } from './PortfolioStyles'
 import AorusImage from "../../../../public/AorusPage.png"
 import VercelIcon from "../../../../public/VercelIcon.svg"
 import GithubIcon from "../../../../public/GithubIcon.png"
@@ -7,7 +7,8 @@ import PostmanIcon from "../../../../public/PostmanIcon.png"
 import AorusAPI from "../../../../public/AorusAPI.png"
 import { useDispatch, useSelector } from 'react-redux'
 import { toggleAorusApiHidden, toggleAorusPageHidden } from '../../../redux/projectsPortfolio/projectsPortfolioSlice'
-
+import PortfolioBgImg from "../../../../public/PruebaFondoPortfolioImg.jpg"
+import { HR } from '../Hero/HeroStyles'
 
 
 const Portfolio = () => {
@@ -19,12 +20,13 @@ const Portfolio = () => {
   const AorusApiIsHidden = useSelector((state) => state.projects.aorusApiHidden)
 
   return (
-    <PortFolioWrapper id='Portfolio'>
-     <PortfolioTitle>{language === "ES" ? "PORTAFOLIO" : "PORTFOLIO"}</PortfolioTitle>
+    <PortFolioWrapper id='Portfolio' style={{ backgroundImage: `url(${PortfolioBgImg})` }}>
+      <PortfolioDivPrueba>
+     <PortfolioTitle>{language === "ES" ? "PORTAFOLIO" : "PORTFOLIO"} <HR/></PortfolioTitle>
       <ProyectsContainer>
         {/* PRIMER PROYECTO */}
         <ProyectBox onClick={() => dispatch(toggleAorusPageHidden())}>
-            {language === "ES" ? "Click en la imagen para ver más." : "Click on the image to see more."}
+             <StyledInstructionPortfolio>{language === "ES" ? "Click en la imagen para ver más." : "Click on the image to see more."} </StyledInstructionPortfolio>
             <StyledImg src={AorusImage} isHidden= {AorusPageIsHidden}/>
             <InfoDescription isHidden= {AorusPageIsHidden}>
               {language === "ES"
@@ -44,7 +46,7 @@ const Portfolio = () => {
 
     {/* SEGUNDO PROYECTO  */}
         <ProyectBox onClick={() => dispatch(toggleAorusApiHidden())}>
-        {language === "ES" ? "Click en la imagen para ver más." : "Click on the image to see more."}
+             <StyledInstructionPortfolio>{language === "ES" ? "Click en la imagen para ver más." : "Click on the image to see more."} </StyledInstructionPortfolio>
             <StyledImg src={AorusAPI} isHidden= {AorusApiIsHidden}/>
             <InfoDescription isHidden= {AorusApiIsHidden}>
               {language === "ES" 
@@ -65,6 +67,7 @@ const Portfolio = () => {
             </InfoDescription>
         </ProyectBox>
       </ProyectsContainer>
+      </PortfolioDivPrueba>
     </PortFolioWrapper>
   )
 }

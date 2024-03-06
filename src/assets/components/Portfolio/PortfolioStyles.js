@@ -2,18 +2,29 @@ import styled, { keyframes } from "styled-components";
 
 
 export const PortFolioWrapper = styled.div `
+    min-height: calc(100vh - 50px);
+    width: 100%;
+    overflow-x: hidden;
+    background-size: cover;
+    /* margin: 100px; */
+`
+export const PortfolioDivPrueba = styled.div `
+    width: 100%;
+    min-height: calc(100vh - 50px);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     gap: 100px;
-    min-height: calc(100vh - 50px);
-    margin: 100px;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
 `
 
 export const PortfolioTitle = styled.h2 `
     font-size: 30px;
-    color: #5C5C5C;
+    color: white;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
 `
 
 export const ProyectsContainer = styled.div `
@@ -21,6 +32,8 @@ export const ProyectsContainer = styled.div `
     flex-direction: row;
     align-items: flex-start;
     gap: 10px;
+    background-color: transparent;
+
 `
 
 export const ProyectBox = styled.div `
@@ -28,9 +41,17 @@ export const ProyectBox = styled.div `
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: transparent;
     /* gap: 20px; */
     /* position: relative; */
     width: 60%;
+`
+
+export const StyledInstructionPortfolio = styled.p `
+    color: white;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    padding: 5px;
 `
 
 
@@ -57,7 +78,7 @@ export const InfoDescription = styled.div `
     align-items: center;
     border-radius: 2rem;
     padding: 10px;
-    width: ${({isHidden}) => isHidden ? "80%": "100%"};
+    width: ${({isHidden}) => isHidden ? "80%": "90%"};
     margin-top: ${({isHidden}) => isHidden ? "-250px": "5px"};
 
 `
