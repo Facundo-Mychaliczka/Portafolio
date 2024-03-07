@@ -51,9 +51,12 @@ export const StyledNavbarLi = styled.a `
         scale: 1.1;
         transition: 0.25s;
     }
+    @media(max-width: 880px) {
+        display: none;
+    }
 `
 
-export const MenuBtn = styled.p `
+export const LanguageBtn = styled.p `
     background-color: transparent;
     cursor: pointer;
     padding: 3px;
@@ -64,5 +67,17 @@ export const MenuBtn = styled.p `
         background-color: #EBEBEB;
         color: black;
         transition: 0.5s;
+    }
+`
+export const MenuBtn = styled.img `
+    cursor: pointer;
+    width: 40px;
+    background-color: transparent;
+    transition: 0.25s;
+    &:hover {
+        scale: 1.1;
+    }
+    @media(min-width: 880px) {
+        display: none;
     }
 `

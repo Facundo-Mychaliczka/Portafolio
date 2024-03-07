@@ -3,9 +3,34 @@ import { createSlice } from "@reduxjs/toolkit"
 
 const INITIAL_STATE = {
     menuHidden: true,
+    smallMenuHidden: true,
     blurHidden: true,
     language: "ES"
 }
+
+const blurFunction = (state, action) => {
+    const {click} = action.payload
+    
+    if (click === "smallMenu") {
+        if (state.smallMenuHidden === true && state.blurHidden === true && state.menuHidden === true) {
+            return false
+        } else if (state.menuHidden === false) {
+            return false
+        }else if (state.smallMenuHidden === false ) {
+            return true
+        } 
+    }
+    else if (click === "menuLanguages") {
+        if (state.smallMenuHidden === true && state.blurHidden === true && state.menuHidden === true) {
+            return false
+        }  else if(state.smallMenuHidden === false) {
+            return false
+        }else if (state.menuHidden === false ) {
+            return true
+        }
+    }
+}
+
 
 const languageSlice = createSlice({
     name: "language",
@@ -27,20 +52,38 @@ const languageSlice = createSlice({
                 blurHidden: true
             } 
         },
-        toggleHiddenMenu: (state) => {
+        toggleHiddenMenu: (state, action) => {
             return {
                 ...state,
                 menuHidden: !state.menuHidden,
-                blurHidden: !state.blurHidden
+                smallMenuHidden: true,
+                blurHidden: blurFunction(state, action )
+            }
+        },
+        toggleHiddenSmallMenu: (state, action) => {
+            return{
+                ...state,
+                smallMenuHidden: !state.smallMenuHidden,
+                menuHidden: true,
+                blurHidden: blurFunction(state, action)
+            }
+        },
+        navigationTroughtMenu: (state) => {
+            return {
+                ...state,
+                smallMenuHidden: true,
+                blurHidden: true
             }
         },
         setHiddenBlur: (state) => {
             return {
                 ...state,
                 blurHidden: true,
-                menuHidden: true
+                menuHidden: true,
+                smallMenuHidden: true
             }
-        }
+        },
+
     }
 })
 
@@ -48,6 +91,8 @@ export const {
     setLanguageToEN,
     setLanguageToES,
     toggleHiddenMenu,
+    toggleHiddenSmallMenu,
+    navigationTroughtMenu,
     setHiddenBlur
 } = languageSlice.actions;
 

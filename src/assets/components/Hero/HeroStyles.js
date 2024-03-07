@@ -14,6 +14,8 @@ export const HeroStyled = styled.div `
 export const StyledImg = styled.img `
     border-radius: 6rem;
     height: 100%;
+    background-color: white;
+    width: 200px;
 `
 
 export const StyledH1 = styled.h1 `

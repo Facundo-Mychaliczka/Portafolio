@@ -10,7 +10,7 @@ const Hero = () => {
 
   return (
     <HeroStyled id="hero" style={{ backgroundImage: `url(${HeroBgImage})` }}>
-      <StyledImg src='LogoImg.png'/>
+      <StyledImg src='LogoPerso2.png'/>
       <StyledH1>Facundo Mychaliczka</StyledH1>
       <HR/>
       {

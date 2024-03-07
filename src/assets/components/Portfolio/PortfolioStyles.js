@@ -18,6 +18,7 @@ export const PortfolioDivPrueba = styled.div `
     gap: 100px;
     background-color: transparent;
     backdrop-filter: blur(5px);
+
 `
 
 export const PortfolioTitle = styled.h2 `
@@ -33,6 +34,12 @@ export const ProyectsContainer = styled.div `
     align-items: flex-start;
     gap: 10px;
     background-color: transparent;
+    @media (max-width: 1260px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: calc(5rem - 20px);
+    }
 
 `
 

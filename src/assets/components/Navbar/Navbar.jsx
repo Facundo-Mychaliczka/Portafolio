@@ -1,8 +1,10 @@
 import React from 'react'
-import { MenuBtn, NavProfile, NavWrapper, NavbarName, NavbarUl, StyledNavbarLi } from './NavbarStyles'
+import { LanguageBtn, MenuBtn, NavProfile, NavWrapper, NavbarName, NavbarUl, StyledNavbarLi } from './NavbarStyles'
 import MenuNav from './MenuNav/MenuNav'
 import { useDispatch, useSelector } from 'react-redux'
-import { toggleHiddenMenu } from '../../../redux/language/languageSlice'
+import { toggleHiddenMenu, toggleHiddenSmallMenu } from '../../../redux/language/languageSlice'
+import MenuIcon from "../../../../public/MenuIcon.png"
+import MenuSmall from './MenuSmall/MenuSmall'
 
 const Navbar = () => {
 
@@ -20,9 +22,10 @@ const Navbar = () => {
           <StyledNavbarLi href='#Skillset'>{language === "ES" ? "Conocimientos" : "Skillset"}</StyledNavbarLi>
           <StyledNavbarLi href='#Portfolio'>{language === "ES" ? "Portafolio" : "Portfolio"}</StyledNavbarLi>
           <StyledNavbarLi href='#ContactMe'>{language === "ES" ? "Contacto" : "Contact"}</StyledNavbarLi>
-          <MenuBtn onClick={() => dispatch(toggleHiddenMenu())}>{language === "ES" ? "Idioma": "Language"}</MenuBtn>
+          <LanguageBtn onClick={() => dispatch(toggleHiddenMenu({click:"menuLanguages"}))}>{language === "ES" ? "Idioma": "Language"}</LanguageBtn>
+          <MenuBtn onClick={() => dispatch(toggleHiddenSmallMenu({click:"smallMenu"}))} src={MenuIcon}/>
         </NavbarUl>
-        
+        <MenuSmall/>
         <MenuNav/>
     </NavWrapper>
   )
