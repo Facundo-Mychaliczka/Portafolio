@@ -11,7 +11,7 @@ export const StyledMenu = styled.div `
     background-color: var(--navBgColor);
     margin: 10px;
     padding: 10px;
-    border-radius: 2rem;
+    border-bottom-left-radius: 1rem;
     gap: 10px;
     /* --------- */
     top: 40px;

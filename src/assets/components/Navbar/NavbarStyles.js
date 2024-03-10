@@ -74,6 +74,7 @@ export const MenuBtn = styled.img `
     width: 40px;
     background-color: transparent;
     transition: 0.25s;
+    
     &:hover {
         scale: 1.1;
     }

@@ -2,6 +2,7 @@ import React from 'react'
 import { AboutMeContainer, AboutMeDescription, AboutMeDescriptionContainer, AboutMeImg, AboutMeImgContainer, AboutMeTitle, AboutMeWrapper, DownloadBtn } from './AboutMeStyles'
 import { useSelector } from 'react-redux'
 import { HR } from '../Hero/HeroStyles'
+import Certificado from "../../../../public/CertificadoFull-Stack.pdf"
 
 const AboutMe = () => {
 
@@ -30,7 +31,7 @@ const AboutMe = () => {
            <br />
            Actualmente estoy haciendo proyectos personales para seguir afianzando mis conocimientos y perfeccionando mis habilidades, tanto en frot-end como en back-end. <br />
           </AboutMeDescription>
-          <DownloadBtn href='../../../../public/Certificado Full-Stack.pdf' download="Certificado Full-Stack Mychaliczka"  title="Descargar Certificado Full-Stack">Descargar Certificado</DownloadBtn>
+          <DownloadBtn href={Certificado} download="Certificado Full-Stack Mychaliczka"  title="Descargar Certificado Full-Stack">Descargar Certificado</DownloadBtn>
           </AboutMeDescriptionContainer>
          : 
          <AboutMeDescriptionContainer>
@@ -45,7 +46,7 @@ const AboutMe = () => {
           <br />
           I am currently doing personal projects to continue strengthening my knowledge and perfecting my skills, both front-end and back-end.
         </AboutMeDescription>
-        <DownloadBtn href='../../../../public/Certificado Full-Stack.pdf' download="Certificate Full-Stack Mychaliczka"  title="Download Full-Stack Certificate">Download Certificate</DownloadBtn>
+        <DownloadBtn href={Certificado} download="Certificate Full-Stack Mychaliczka"  title="Download Full-Stack Certificate">Download Certificate</DownloadBtn>
         </AboutMeDescriptionContainer>
         }
          

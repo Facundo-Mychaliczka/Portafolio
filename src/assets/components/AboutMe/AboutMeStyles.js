@@ -52,6 +52,7 @@ export const AboutMeDescription = styled.p `
     }
     @media (max-width: 880px) {
         text-align: left;
+        font-size: 15px;
     }
 `
 

@@ -4,12 +4,14 @@ import MenuNav from './MenuNav/MenuNav'
 import { useDispatch, useSelector } from 'react-redux'
 import { toggleHiddenMenu, toggleHiddenSmallMenu } from '../../../redux/language/languageSlice'
 import MenuIcon from "../../../../public/MenuIcon.png"
+import RightArrow from "../../../../public/RightArrow.png"
 import MenuSmall from './MenuSmall/MenuSmall'
 
 const Navbar = () => {
 
   const dispatch = useDispatch()
   const language = useSelector((state) => state.language.language)
+  const isHiddenSmallMenu = useSelector((state) => state.language.smallMenuHidden)
 
   return (
     <NavWrapper>
@@ -23,7 +25,7 @@ const Navbar = () => {
           <StyledNavbarLi href='#Portfolio'>{language === "ES" ? "Portafolio" : "Portfolio"}</StyledNavbarLi>
           <StyledNavbarLi href='#ContactMe'>{language === "ES" ? "Contacto" : "Contact"}</StyledNavbarLi>
           <LanguageBtn onClick={() => dispatch(toggleHiddenMenu({click:"menuLanguages"}))}>{language === "ES" ? "Idioma": "Language"}</LanguageBtn>
-          <MenuBtn onClick={() => dispatch(toggleHiddenSmallMenu({click:"smallMenu"}))} src={MenuIcon}/>
+          <MenuBtn onClick={() => dispatch(toggleHiddenSmallMenu({click:"smallMenu"}))} src={isHiddenSmallMenu === true ? MenuIcon : RightArrow} />
         </NavbarUl>
         <MenuSmall/>
         <MenuNav/>
