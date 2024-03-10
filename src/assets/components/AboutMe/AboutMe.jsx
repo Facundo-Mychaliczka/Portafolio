@@ -31,7 +31,7 @@ const AboutMe = () => {
            <br />
            Actualmente estoy haciendo proyectos personales para seguir afianzando mis conocimientos y perfeccionando mis habilidades, tanto en frot-end como en back-end. <br />
           </AboutMeDescription>
-          <DownloadBtn href={Certificado} download="Certificado Full-Stack Mychaliczka"  title="Descargar Certificado Full-Stack">Descargar Certificado</DownloadBtn>
+          <DownloadBtn href={Certificado}  download="Certificado Full-Stack Mychaliczka"  title="Descargar Certificado Full-Stack">Descargar Certificado</DownloadBtn>
           </AboutMeDescriptionContainer>
          : 
          <AboutMeDescriptionContainer>
