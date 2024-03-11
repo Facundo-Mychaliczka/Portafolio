@@ -1,5 +1,5 @@
 import React  from 'react'
-import {  IconsWrapper, InfoDescription, PortFolioWrapper, PortfolioDivPrueba, PortfolioTitle, ProyectBox, ProyectsContainer, StyledIcon, StyledImg, StyledInstructionPortfolio, StyledLink, StyledP } from './PortfolioStyles'
+import { IconsWrapper, InfoDescription, PortFolioWrapper, PortfolioDivPrueba, PortfolioTitle, ProyectBox, ProyectsContainer, StyledIcon, StyledImg, StyledInstructionPortfolio, StyledLink, StyledP } from './PortfolioStyles'
 import AorusImage from "../../../../public/AorusPage.png"
 import VercelIcon from "../../../../public/VercelIcon.svg"
 import GithubIcon from "../../../../public/GithubIcon.png"
@@ -38,8 +38,8 @@ const Portfolio = () => {
               }
               
               <IconsWrapper>
-              <StyledLink href='https://integrador-react-facundo-mychaliczka.vercel.app/' target='_blank'>Deploy<StyledIcon src={VercelIcon} alt="" /></StyledLink>
-                <StyledLink href='https://github.com/Facundo-Mychaliczka/ApiBack' target='_blank'>Code<StyledIcon src={GithubIcon} alt="" /></StyledLink>
+              <StyledLink isHidden= {AorusPageIsHidden} href='https://integrador-react-facundo-mychaliczka.vercel.app/' target='_blank'>Deploy<StyledIcon src={VercelIcon} alt="" /></StyledLink>
+                <StyledLink isHidden= {AorusPageIsHidden} href='https://github.com/Facundo-Mychaliczka/ApiBack' target='_blank'>Code<StyledIcon src={GithubIcon} alt="" /></StyledLink>
               </IconsWrapper>
             </InfoDescription>
         </ProyectBox>
@@ -61,8 +61,8 @@ const Portfolio = () => {
               }
               
               <IconsWrapper>
-                <StyledLink href='https://documenter.getpostman.com/view/30895857/2sA2rAz2nC' target='_blank'>Postman Doc.<StyledIcon src={PostmanIcon} alt="" /></StyledLink>
-                <StyledLink href='https://github.com/Facundo-Mychaliczka/ApiBack' target='_blank'>Code<StyledIcon src={GithubIcon} alt="" /></StyledLink>
+                <StyledLink isHidden= {AorusApiIsHidden}  href='https://documenter.getpostman.com/view/30895857/2sA2rAz2nC' target='_blank'>Postman Doc.<StyledIcon src={PostmanIcon} alt="" /></StyledLink>
+                <StyledLink isHidden= {AorusApiIsHidden} href='https://github.com/Facundo-Mychaliczka/ApiBack' target='_blank'>Code<StyledIcon src={GithubIcon} alt="" /></StyledLink>
               </IconsWrapper>
             </InfoDescription>
         </ProyectBox>

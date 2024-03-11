@@ -2,11 +2,16 @@ import styled, { keyframes } from "styled-components";
 
 
 export const PortFolioWrapper = styled.div `
-    min-height: calc(100vh - 50px);
+    min-height: calc(100vh -50px);
     width: 100%;
+     /* padding-bottom: 20px;  */
     overflow-x: hidden;
     background-size: cover;
-    /* margin: 100px; */
+    content: calc(100vh);
+    @media (max-width: 1260px) {
+        overflow-y: hidden;
+        padding-bottom: 10px;
+    }
 `
 export const PortfolioDivPrueba = styled.div `
     width: 100%;
@@ -52,6 +57,9 @@ export const ProyectBox = styled.div `
     /* gap: 20px; */
     /* position: relative; */
     width: 60%;
+    @media (max-width: 1260px) {
+        margin-bottom: 10%;
+    }
 `
 
 export const StyledInstructionPortfolio = styled.p `
@@ -73,7 +81,11 @@ export const StyledImg = styled.img `
     z-index: 1; 
     filter: ${({isHidden}) => isHidden ? "blur(1px) grayScale(1)" : "none"};
     /* SACAR OPACITY */
-      /* opacity: 0.5;   */
+         /* opacity: 0.5;      */
+    @media (max-width: 610px) {
+        width: 150%;
+        height: 50%;
+    }
 `
 
 export const InfoDescription = styled.div `
@@ -87,12 +99,22 @@ export const InfoDescription = styled.div `
     padding: 10px;
     width: ${({isHidden}) => isHidden ? "50%": "90%"};
     margin-top: ${({isHidden}) => isHidden ? "-250px": "5px"};
-
+    @media (max-width: 1260px) {
+        width: ${({isHidden}) => isHidden ? "70%": "90%"};
+    }
+    @media (max-width: 700px) {
+        width: ${({isHidden}) => isHidden ? "100%": "100%"};
+        margin-top: ${({isHidden}) => isHidden ? "-65%": "5px"};
+    }
+    @media (max-width: 600px) {
+        font-size: ${({isHidden}) => isHidden ? "10px": ""};
+        width: 120%;
+        
+    }
 `
 
 export const StyledP = styled.p `
     background-color: transparent;
-    
 `
 
 export const IconsWrapper = styled.div `
@@ -106,7 +128,11 @@ export const StyledLink = styled.a `
     display: flex;
     flex-direction: column;
     background-color: transparent;
+    @media (max-width: 460px) {
+        display: ${({isHidden}) => isHidden ? "none": "flex"};
+    }
 `
+
 
 export const StyledIcon = styled.img `
     width: 30px;

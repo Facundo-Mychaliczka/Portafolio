@@ -33,8 +33,24 @@ export const NavbarName = styled.p `
     background-color: transparent;
     color: white;
     transition: 0.25s;
+    @media (max-width: 400px) {
+        font-size: 80%;
+    }
 `
 
+export const StyledSPan = styled.span `
+    background-color: transparent;
+    color: white;
+    @media (max-width: 440px) {
+        display: none;
+    }
+`
+export const BR = styled.br `
+    display: none;
+    @media (max-width: 440px) {
+        display: flex;
+    }
+`
 
 export const NavbarUl = styled.ul `
     display: flex;

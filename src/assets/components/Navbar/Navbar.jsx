@@ -1,5 +1,5 @@
 import React from 'react'
-import { LanguageBtn, MenuBtn, NavProfile, NavWrapper, NavbarName, NavbarUl, StyledNavbarLi } from './NavbarStyles'
+import { BR, LanguageBtn, MenuBtn, NavProfile, NavWrapper, NavbarName, NavbarUl, StyledNavbarLi, StyledSPan } from './NavbarStyles'
 import MenuNav from './MenuNav/MenuNav'
 import { useDispatch, useSelector } from 'react-redux'
 import { toggleHiddenMenu, toggleHiddenSmallMenu } from '../../../redux/language/languageSlice'
@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <NavWrapper>
         <NavProfile>
-            <NavbarName>Facundo Mychaliczka | {language === "ES" ? "Desarrollador Web Full-Stack" : "Full-Stack Web Developer" }</NavbarName>
+            <NavbarName>Facundo Mychaliczka <BR/> <StyledSPan>|</StyledSPan> {language === "ES" ? "Desarrollador Web Full-Stack" : "Full-Stack Web Developer" }</NavbarName>
         </NavProfile>
         <NavbarUl>
           <StyledNavbarLi href='#hero'>{language === "ES" ? "Inicio" : "Home"}</StyledNavbarLi>
