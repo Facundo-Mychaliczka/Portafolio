@@ -44,9 +44,12 @@ export const AboutMeImg = styled.img `
     background-color: transparent;
     align-items: center;
     justify-content: center;
-    /* @media (max-width: 800px) {
+     @media (max-width: 800px) {
         width: 90%;
-    } */
+    } 
+    @media (max-width: 350px) {
+        width: 150%;
+    } 
 `
 export const AboutMeDescriptionContainer = styled.div `
     display: flex;
