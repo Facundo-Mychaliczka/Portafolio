@@ -3,6 +3,7 @@ import { AboutMeContainer, AboutMeDescription, AboutMeDescriptionContainer, Abou
 import { useSelector } from 'react-redux'
 import { HR } from '../Hero/HeroStyles'
 import Certificado from "../../../../public/Certificado_Ondemand_Programación_Full_Stack.pdf"
+import AboutMeImage from "../../../../public/AboutMeImage.jpeg"
 
 const AboutMe = () => {
 
@@ -15,7 +16,7 @@ const AboutMe = () => {
       <HR/>
       <AboutMeContainer>
       <AboutMeImgContainer>
-        {/* <AboutMeImg src="../../../../public/CSSLogo.png" alt="" /> */}
+        <AboutMeImg src={AboutMeImage} alt="" /> 
       </AboutMeImgContainer>
         
           {language === "ES" 
