@@ -22,16 +22,25 @@ export const AboutMeContainer = styled.div `
     justify-content: space-evenly;
     background-color: transparent;
     margin: 30px;
+    height: 100%;
+    @media (max-width: 800px) {
+        align-items: flex-start;
+    }
 `
 
 export const AboutMeImgContainer = styled.div `
+    display: flex;
     background-color: transparent;
     width: 40%;
+    height: 100%;
+    justify-content: center;
 `
 
 export const AboutMeImg = styled.img `
     width: 50%;
     background-color: transparent;
+    align-items: center;
+    justify-content: center;
 `
 export const AboutMeDescriptionContainer = styled.div `
     display: flex;
