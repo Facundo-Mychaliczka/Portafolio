@@ -24,7 +24,9 @@ export const AboutMeContainer = styled.div `
     margin: 30px;
     height: 100%;
     @media (max-width: 800px) {
-        align-items: flex-start;
+        /* align-items: flex-start; */
+        flex-direction: column;
+        gap: 20px;
     }
 `
 
@@ -37,14 +39,14 @@ export const AboutMeImgContainer = styled.div `
 `
 
 export const AboutMeImg = styled.img `
-    width: 50%;
+    width: 70%;
     border-radius: 1rem;
     background-color: transparent;
     align-items: center;
     justify-content: center;
-    @media (max-width: 800px) {
+    /* @media (max-width: 800px) {
         width: 90%;
-    }
+    } */
 `
 export const AboutMeDescriptionContainer = styled.div `
     display: flex;
@@ -63,7 +65,7 @@ export const AboutMeDescription = styled.p `
     @media (min-width: 1400px) {
         font-size: 30px;
     }
-    @media (max-width: 880px) {
+    @media (max-width: 800px) {
         text-align: left;
         font-size: 15px;
     }
