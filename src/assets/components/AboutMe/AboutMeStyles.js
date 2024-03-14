@@ -62,6 +62,7 @@ export const AboutMeDescriptionContainer = styled.div `
     background-color: transparent;
     @media (max-width: 700px) {
          width: 100%; 
+         padding: 0px 20px 0px 20px;
     } 
 `
 export const AboutMeDescription = styled.p `
