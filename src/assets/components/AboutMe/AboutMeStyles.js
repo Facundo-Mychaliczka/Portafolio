@@ -23,10 +23,11 @@ export const AboutMeContainer = styled.div `
     background-color: transparent;
     margin: 30px;
     height: 100%;
-    @media (max-width: 800px) {
-        /* align-items: flex-start; */
-        flex-direction: column;
-        gap: 20px;
+    @media (max-width: 700px) {
+         align-items: flex-start; 
+         flex-direction: column; 
+         gap: 20px; 
+        width: 100%;
     }
 `
 
@@ -36,6 +37,9 @@ export const AboutMeImgContainer = styled.div `
     width: 40%;
     height: 100%;
     justify-content: center;
+    @media (max-width: 700px) {
+         width: 100%; 
+    } 
 `
 
 export const AboutMeImg = styled.img `
@@ -44,11 +48,8 @@ export const AboutMeImg = styled.img `
     background-color: transparent;
     align-items: center;
     justify-content: center;
-     @media (max-width: 800px) {
-        width: 90%;
-    } 
-    @media (max-width: 350px) {
-        width: 150%;
+     @media (max-width: 700px) {
+        width: 40%;
     } 
 `
 export const AboutMeDescriptionContainer = styled.div `
@@ -59,6 +60,9 @@ export const AboutMeDescriptionContainer = styled.div `
     text-align: justify;
     gap: 20px;
     background-color: transparent;
+    @media (max-width: 700px) {
+         width: 100%; 
+    } 
 `
 export const AboutMeDescription = styled.p `
     text-align: justify;
@@ -72,6 +76,9 @@ export const AboutMeDescription = styled.p `
         text-align: left;
         font-size: 15px;
     }
+    @media (max-width: 700px) {
+         text-align: center;
+    } 
 `
 
 export const DownloadBtn = styled.a `
