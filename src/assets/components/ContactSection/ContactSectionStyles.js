@@ -1,6 +1,6 @@
 import { Form } from "formik";
 import styled from "styled-components";
-import { StyledIcon } from "../Portfolio/PortfolioStyles";
+import { StyledIcon, StyledLinkPortfolio } from "../Portfolio/PortfolioStyles";
 
 
 export const ContactWrapper = styled.div `
@@ -48,9 +48,6 @@ export const LinkedinStyledIcon = styled(StyledIcon) `
     width: 40px;
     height: 40px;
     border-radius: 1rem;
-    &:hover {
-        background-color: #0A66C2;
-    }
 ` 
 
 export const VercelIconContact = styled(StyledIcon) `
@@ -64,4 +61,8 @@ export const IconsWrapper = styled.div `
     flex-direction: row;
     background-color: transparent;
     gap: 20px;
+`
+
+export const StyledLinkContact = styled(StyledLinkPortfolio) `
+    background-color: #0A66C2;
 `

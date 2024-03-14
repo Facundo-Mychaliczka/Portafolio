@@ -1,5 +1,5 @@
 import React from 'react'
-import { FooterContainer, FooterStyled } from './FooterStyles'
+import { FooterContainer, FooterStyled, StyledLinkFooter } from './FooterStyles'
 import { StyledIcon, StyledLinkPortfolio } from '../Portfolio/PortfolioStyles'
 import GithubIcon from "../../../../public/GithubIcon.png"
 import { useSelector } from 'react-redux'
@@ -11,9 +11,9 @@ const Footer = () => {
     <FooterStyled>
       {language === "ES"
       ?<FooterContainer>
-            Desarrolado y diseñado por Facundo Mychaliczka.
+            Desarrollado y diseñado por Facundo Mychaliczka.
             <br />
-            También puedes encontrar el código de ésta página en: <StyledLinkPortfolio href='https://github.com/Facundo-Mychaliczka/Portafolio' target='_blank'><StyledIcon src={GithubIcon} alt="" /></StyledLinkPortfolio>
+            También puedes encontrar el código de ésta página en: <StyledLinkFooter href='https://github.com/Facundo-Mychaliczka/Portafolio' target='_blank'><StyledIcon src={GithubIcon} alt="" /></StyledLinkFooter>
         </FooterContainer>
         : <FooterContainer>
         Developed and designed by Facundo Mychaliczka.
