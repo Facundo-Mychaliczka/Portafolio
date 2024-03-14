@@ -11,7 +11,6 @@ export const GlobalStyles = createGlobalStyle `
         color: black;
         align-items: center;
         text-align: center;
-        
     }
     :root {
         --navBgColor: #1B87CA;

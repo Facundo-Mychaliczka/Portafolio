@@ -4,7 +4,7 @@ import {Formik} from "formik"
 import { INITIAL_VALUES_CONTACT, validationSchema, validationSchemaEnglish } from './FormikData/FormikData'
 import ContactInput from './Input/ContactInput'
 import { HR } from '../Hero/HeroStyles'
-import { StyledLink } from '../Portfolio/PortfolioStyles'
+import {  StyledLinkPortfolio } from '../Portfolio/PortfolioStyles'
 import GithubIcon from "../../../../public/GithubIcon.png"
 import LinkedinIcon from "../../../../public/LinkedinIcon.png"
 import VercelIcon from "../../../../public/VercelIcon.svg"
@@ -34,9 +34,9 @@ const ContactSection = () => {
             </StyledContactForm>
         </Formik>
         <IconsWrapper>
-            <StyledLink href='https://github.com/Facundo-Mychaliczka' target='_blank'><StyledIconContact src={GithubIcon} alt="" /></StyledLink>
-            <StyledLink href='https://www.linkedin.com/in/facundo-mychaliczka-4653a7299/' target='_blank'><LinkedinStyledIcon src={LinkedinIcon} alt="" /></StyledLink>
-            <StyledLink href='https://vercel.com/facundo-mychaliczka' target='_blank'><VercelIconContact src={VercelIcon} alt="" /></StyledLink>
+            <StyledLinkPortfolio href='https://github.com/Facundo-Mychaliczka' target='_blank'><StyledIconContact src={GithubIcon} alt="" /></StyledLinkPortfolio>
+            <StyledLinkPortfolio href='https://www.linkedin.com/in/facundo-mychaliczka-4653a7299/' target='_blank'><LinkedinStyledIcon src={LinkedinIcon} alt="" /></StyledLinkPortfolio>
+            <StyledLinkPortfolio href='https://vercel.com/facundo-mychaliczka' target='_blank'><VercelIconContact src={VercelIcon} alt="" /></StyledLinkPortfolio>
         </IconsWrapper>
         
     </ContactWrapper>
