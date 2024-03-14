@@ -43,7 +43,7 @@ export const AboutMeImg = styled.img `
     align-items: center;
     justify-content: center;
     @media (max-width: 800px) {
-        width: 80%;
+        width: 90%;
     }
 `
 export const AboutMeDescriptionContainer = styled.div `
