@@ -38,9 +38,13 @@ export const AboutMeImgContainer = styled.div `
 
 export const AboutMeImg = styled.img `
     width: 50%;
+    border-radius: 1rem;
     background-color: transparent;
     align-items: center;
     justify-content: center;
+    @media (max-width: 800px) {
+        width: 80%;
+    }
 `
 export const AboutMeDescriptionContainer = styled.div `
     display: flex;
