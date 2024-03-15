@@ -24,7 +24,7 @@ const AboutMe = () => {
           <AboutMeDescription>
            Soy Facundo Mychaliczka, desarrollador web full-stack de Argentina. <br />
            <br />
-           Aunque no tengo experiencia profesional en el campo, he estado realizando diversos proyectos en NUCBA, donde estudié los diferentes módulos de desarrollo web: HTML y CSS puro, JavaScript, ReactJS y Typescript junto a distintas librerías necesarias que me permitieron conseguir el título de "Programación Full-Stack". <br />
+           He estado realizando diversos proyectos en NUCBA, donde estudié los diferentes módulos de desarrollo web: HTML y CSS puro, JavaScript, ReactJS y Typescript junto a distintas librerías necesarias que me permitieron conseguir el título de "Programación Full-Stack". <br />
            <br />
            A demás, hablo Inglés con fluidez, lo que me permite comunicarme eficazmente en un entorno global.<br />
            <br />
@@ -39,7 +39,7 @@ const AboutMe = () => {
          <AboutMeDescription>
          I am Facundo Mychaliczka, a full-stack web developer from Argentina. <br />
          <br />
-          Although I do not have professional experience in the field, I have been carrying out various projects at NUCBA, where I studied the different web development modules: HTML and CSS, JavaScript, ReactJS and Typescript along with different necessary libraries that allowed me to obtain the title of "Programming Full-Stack". <br />
+          I have been carrying out various projects at NUCBA, where I studied the different web development modules: HTML and CSS, JavaScript, ReactJS and Typescript along with different necessary libraries that allowed me to obtain the title of "Programming Full-Stack". <br />
           <br />
           Additionally, I speak fluent English, which allows me to communicate effectively in a global environment. <br />
           <br />

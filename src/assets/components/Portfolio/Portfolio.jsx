@@ -68,7 +68,7 @@ const Portfolio = () => {
           </TecnologiesPortfolio>
 
           <IconsWrapper>
-                <StyledLinkPortfolio href='https://github.com/Facundo-Mychaliczka/ApiBack' target='_blank'>Code<StyledIcon src={GithubIcon} alt="" /></StyledLinkPortfolio>
+                <StyledLinkPortfolio href='https://github.com/Facundo-Mychaliczka/ApiBack' target='_blank'>{language === "ES"? "Código": "Code"}<StyledIcon src={GithubIcon} alt="" /></StyledLinkPortfolio>
             </IconsWrapper>
           
          </ProyectDescription>
