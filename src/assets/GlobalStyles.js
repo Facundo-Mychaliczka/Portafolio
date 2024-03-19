@@ -30,6 +30,6 @@ export const BlurDisplay = styled.div `
     width: 100%;
     z-index: 1;
     backdrop-filter: blur(2px);
-    display:${({hidden}) => hidden ? "none": "block"} ;
+   display:${({hidden}) => hidden ? "none": "block"} ;
 `
 
