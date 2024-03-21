@@ -3,6 +3,8 @@ import { AboutMeContainer, AboutMeDescription, AboutMeDescriptionContainer, Abou
 import { useSelector } from 'react-redux'
 import { HR } from '../Hero/HeroStyles'
 import Certificado from "../../../../public/Certificado_Ondemand_Programación_Full_Stack.pdf"
+import CVMychaliczka from "../../../../public/CV Mychaliczka.pdf"
+import ENCVMychaliczka from "../../../../public/CV Mychaliczka (EN).pdf"
 import AboutMeImage from "../../../../public/AboutMeImage.jpeg"
 
 const AboutMe = () => {
@@ -32,7 +34,7 @@ const AboutMe = () => {
            <br />
            Actualmente estoy haciendo proyectos personales para seguir afianzando mis conocimientos y perfeccionando mis habilidades, tanto en frot-end como en back-end. <br />
           </AboutMeDescription>
-          <DownloadBtn href={Certificado}  download="Certificado Full-Stack Mychaliczka"  title="Descargar Certificado Full-Stack">Descargar Certificado</DownloadBtn>
+          <DownloadBtn href={CVMychaliczka}  download="Mychaliczka CV"  title="Descargar CV">Descargar CV</DownloadBtn>
           </AboutMeDescriptionContainer>
          : 
          <AboutMeDescriptionContainer>
@@ -47,7 +49,7 @@ const AboutMe = () => {
           <br />
           I am currently doing personal projects to continue strengthening my knowledge and perfecting my skills, both front-end and back-end.
         </AboutMeDescription>
-        <DownloadBtn href={Certificado} download="Certificate Full-Stack Mychaliczka"  title="Download Full-Stack Certificate">Download Certificate</DownloadBtn>
+        <DownloadBtn href={ENCVMychaliczka} download="Mychaliczka CV (EN)"  title="Download CV">Download CV</DownloadBtn>
         </AboutMeDescriptionContainer>
         }
          

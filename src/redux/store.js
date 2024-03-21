@@ -3,12 +3,10 @@ import languageReducers from "./language/languageSlice"
 import storage from 'redux-persist/lib/storage'
 import persistReducer from "redux-persist/es/persistReducer";
 import persistStore from "redux-persist/es/persistStore";
-import projectReducers from "./projectsPortfolio/projectsPortfolioSlice"
 
 
 const reducers = combineReducers({
-    language: languageReducers,
-    projects: projectReducers
+    language: languageReducers,  
 });
 
 const persistConfig = {
