@@ -11,7 +11,6 @@ import {
 } from "./AboutMeStyles";
 import { useSelector } from "react-redux";
 import { HR } from "../Hero/HeroStyles";
-import Certificado from "../../../../public/Certificado_Ondemand_Programación_Full_Stack.pdf";
 import CVMychaliczka from "../../../../public/CV Mychaliczka.pdf";
 import ENCVMychaliczka from "../../../../public/CV Mychaliczka (EN).pdf";
 import AboutMeImage from "../../../../public/AboutMeImage.jpeg";
