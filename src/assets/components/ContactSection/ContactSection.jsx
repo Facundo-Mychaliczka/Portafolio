@@ -14,7 +14,6 @@ import { Formik } from "formik";
 import { INITIAL_VALUES_CONTACT, validationSchema, validationSchemaEnglish } from "./FormikData/FormikData";
 import ContactInput from "./Input/ContactInput";
 import { HR } from "../Hero/HeroStyles";
-import { StyledLinkPortfolio } from "../Portfolio/PortfolioStyles";
 import GithubIcon from "../../../../public/GithubIcon.png";
 import LinkedinIcon from "../../../../public/LinkedinIcon.png";
 import VercelIcon from "../../../../public/VercelIcon.svg";

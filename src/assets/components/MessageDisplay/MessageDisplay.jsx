@@ -14,7 +14,7 @@ const MessageDisplay = () => {
 			<MessageModalP>
 				{language === "ES"
 					? "¡Muchas gracias por su mensaje, lo leeré a la brevedad!"
-					: "¡Thanks for the message, i´ll read it as soon as possible!"}
+					: "¡Thanks for the message, I´ll read it as soon as possible!"}
 			</MessageModalP>
 			<MessageCloseIconContainer>
 				<MessageCloseIcon src={CloseIcon} onClick={() => dispatch(setMessageModalTrue())} />
