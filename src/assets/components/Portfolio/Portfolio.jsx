@@ -186,8 +186,8 @@ const Portfolio = () => {
 						<ProyectDescription>
 							{language === "ES" ? (
 								<ProyectP>
-									Página profesional diseñada a medida para traductora, realizada con ReactJs, Javascript y su sección
-									de "Contacto" totalmente funcional, enciando e-mail al correo del cliente con el contenido
+									Página profesional diseñada a medida para traductora, realizada con ReactJs y Javascript y su sección
+									de "Contacto" totalmente funcional, enviando e-mail al correo del cliente con el contenido
 									proporcionado en la página por el usuario.
 								</ProyectP>
 							) : (
