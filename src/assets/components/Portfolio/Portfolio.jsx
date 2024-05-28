@@ -28,6 +28,7 @@ import {
 import AorusImage from "../../../../public/AorusPage.png";
 import AorusAPI from "../../../../public/AorusAPI.png";
 import ElenoPage from "../../../../public/ElenoPage.png";
+import WatchSTHImg from "../../../../public/WatchSTHImage.png";
 import VercelIcon from "../../../../public/VercelIcon.svg";
 import GithubIcon from "../../../../public/GithubIcon.png";
 import PostmanIcon from "../../../../public/PostmanIcon.png";
@@ -87,9 +88,7 @@ const Portfolio = () => {
 								<AccordionStyled allowZeroExpanded>
 									<AccordionItemStyled>
 										<AccordionItemHeadingStyled>
-											<AccordionItemButtonStyled>
-												➡{language === "ES" ? "Librerías" : "Libraries"}
-											</AccordionItemButtonStyled>
+											<AccordionItemButtonStyled>➡Frameworks</AccordionItemButtonStyled>
 										</AccordionItemHeadingStyled>
 										<AccordionItemPanelStyled>
 											<AccordionUl>
@@ -149,9 +148,7 @@ const Portfolio = () => {
 								<AccordionStyled allowZeroExpanded>
 									<AccordionItemStyled>
 										<AccordionItemHeadingStyled>
-											<AccordionItemButtonStyled>
-												➡{language === "ES" ? "Librerías" : "Libraries"}
-											</AccordionItemButtonStyled>
+											<AccordionItemButtonStyled>➡Frameworks</AccordionItemButtonStyled>
 										</AccordionItemHeadingStyled>
 										<AccordionItemPanelStyled>
 											<AccordionUl>
@@ -213,9 +210,7 @@ const Portfolio = () => {
 								<AccordionStyled allowZeroExpanded>
 									<AccordionItemStyled>
 										<AccordionItemHeadingStyled>
-											<AccordionItemButtonStyled>
-												➡{language === "ES" ? "Librerías" : "Libraries"}
-											</AccordionItemButtonStyled>
+											<AccordionItemButtonStyled>➡Frameworks</AccordionItemButtonStyled>
 										</AccordionItemHeadingStyled>
 										<AccordionItemPanelStyled>
 											<AccordionUl>
@@ -229,6 +224,60 @@ const Portfolio = () => {
 												<AccordionLi>- Express</AccordionLi>
 												<AccordionLi>- Nodemailer</AccordionLi>
 												<AccordionLi>- Nodemon</AccordionLi>
+											</AccordionUl>
+										</AccordionItemPanelStyled>
+									</AccordionItemStyled>
+								</AccordionStyled>
+							</TecnologiesPortfolio>
+						</ProyectDescription>
+					</ProyectBox>
+					{/* CUARTO PROYECTO */}
+					<ProyectBox>
+						<ProyectImageAnchor href="https://watchsth.netlify.app/" target="_blank">
+							<ProyectImage src={WatchSTHImg} />
+						</ProyectImageAnchor>
+						<ProyectDescription>
+							{language === "ES" ? (
+								<ProyectP>
+									Página personal de uso educativo, en el que utiliza la base de datos de TheMovieDB, con apartados de
+									"Películas" y "Series". Cada apartado y ruta utiliza su propios datos, utilizando más de 10 conexiones
+									a la base de datos y manejando sus errores he creado una página totalmente funcional que se puede
+									utilizar tanto para ver información y casteos del actor/actriz seleccionada, información, elenco y
+									disponibilidad de la serie o película seleccionada, como para ver en qué plataforma está disponible la
+									misma.
+								</ProyectP>
+							) : (
+								<ProyectP>
+									Personal page for educational use, which uses TheMovieDB database, with "Movies" and "Series"
+									sections. Each section and route uses its own data, using more than 10 connections to the database and
+									managing its errors, I have created a fully functional page that can be used to view information and
+									castings of the selected actor/actress, information, cast and availability of the selected series or
+									movie, as well as to see which platform it is available on.
+								</ProyectP>
+							)}
+
+							<TecnologiesPortfolio>
+								<TecnologiesTitle>
+									{language === "ES" ? "Tecnologías usadas" : "Technologies used"}
+									<HRSecondary />
+								</TecnologiesTitle>
+								<TecnlogiesImgContainer>
+									<TecnologieImg src={ReactLogo} />
+									<TecnologieImg src={JavaScriptLogo} />
+									<TecnologieImg src={GitLogo} />
+								</TecnlogiesImgContainer>
+
+								<AccordionStyled allowZeroExpanded>
+									<AccordionItemStyled>
+										<AccordionItemHeadingStyled>
+											<AccordionItemButtonStyled>➡Frameworks</AccordionItemButtonStyled>
+										</AccordionItemHeadingStyled>
+										<AccordionItemPanelStyled>
+											<AccordionUl>
+												<AccordionLi>- StyledComponents</AccordionLi>
+												<AccordionLi>- Axios</AccordionLi>
+												<AccordionLi>- React-Redux</AccordionLi>
+												<AccordionLi>- React-Router-Dom</AccordionLi>
 											</AccordionUl>
 										</AccordionItemPanelStyled>
 									</AccordionItemStyled>
